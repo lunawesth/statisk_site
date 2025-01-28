@@ -1,0 +1,55 @@
+* {
+  max-width: 100%;
+}
+
+h1,
+h2,
+p {
+  font-family: Arial, sans-serif;
+}
+
+.r {
+  transform: scaleX(-1);
+  display: inline-block;
+  color: rgb(252, 0, 0);
+}
+
+/* index */
+
+.knap_container {
+  display: grid;
+  grid-template-columns: repeat(1fr);
+  text-align: center;
+}
+
+.knap1,
+.knap2,
+.knap3,
+.knap4,
+.knap5,
+.knap6 {
+  background: color #fff;
+  color: #000;
+  border: solid 1px black;
+  padding: 10px 20px;
+  margin: 5px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+a:hover {
+  opacity: 0.5;
+}
+
+footer {
+  text-align: center;
+  padding-top: 80px;
+}
+
+/* produktside */
+
+/* .produkter {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 1rem;
+  } */
