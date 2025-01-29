@@ -78,7 +78,39 @@ article {
 .produkter {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 0.4em;
+  gap: 5px;
+}
+
+.read_more {
+  text-decoration: none;
+  color: #000;
+  border: solid 1px black;
+  margin-top: auto;
+}
+
+.tilbud {
+  background-color: red;
+  display: inline-block;
+}
+
+.sold-out_container {
+  position: relative;
+}
+
+.sold-out_billede {
+  position: relative;
+}
+
+.sold-out_tekst {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  padding: 5px 10px;
+  font-size: 12px;
+}
+
+.sold-out_container img {
+  filter: grayscale(80%) opacity(50%);
 }
 
 /* produktside */
@@ -87,6 +119,11 @@ article {
   border: solid 1px #000;
   padding: 10px;
   display: inline-block;
+  cursor: pointer;
+}
+
+.kurven:hover {
+  opacity: 0.5;
 }
 
 @media (width >= 700px) {
